@@ -1,13 +1,16 @@
 import React, {useState} from 'react';
 
-const Form = () => {
+const Form = ({newLocation}) => {
     
     const [city, setCity] = useState("");
 
     const onSubmit = (e) => {
         e.preventDefault();
         console.log({city});
-        // me quede en el min 19:19
+        if(city === "" || !city) return;
+
+        newLocation(city);
+
     }
 
     return (
