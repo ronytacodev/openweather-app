@@ -3,10 +3,10 @@ import Form from './Form';
 
 const WeatherPanel = () => {
 
-    let urlWeather ="https://api.openweathermap.org/data/2.5/weather?appid=5c6f751ebb0a901d3cbd87422992b634&lang=es";
+    let urlWeather ="https://api.openweathermap.org/data/2.5/weather?APPID=5c6f751ebb0a901d3cbd87422992b634&lang=es";
     let cityUrl ="&q=";
 
-    let urlForecast ="https://api.openweathermap.org/data/2.5/forecast?appid=5c6f751ebb0a901d3cbd87422992b634&lang=es";
+    let urlForecast ="https://api.openweathermap.org/data/2.5/forecast?APPID=5c6f751ebb0a901d3cbd87422992b634&lang=es";
 
     const [weather, setWeather] = useState([]);
     const [forecast, setForecast] = useState([]);
@@ -57,6 +57,7 @@ const WeatherPanel = () => {
         <React.Fragment>
             <Form 
                 newLocation = {getLocation}
+                // me quede en el min 43:16
             />
         </React.Fragment>
     );
