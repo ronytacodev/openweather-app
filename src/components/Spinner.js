@@ -3,7 +3,13 @@ import "../assets/css/Spinner.css";
 
 const Spinner = () => {
     return (
-        <div class="lds-facebook">
+        <div class="lds-spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
             <div></div>
             <div></div>
             <div></div>

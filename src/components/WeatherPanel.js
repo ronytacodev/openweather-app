@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Form from './Form';
+import Card from './Card';
 
 const WeatherPanel = () => {
 
@@ -57,7 +58,13 @@ const WeatherPanel = () => {
         <React.Fragment>
             <Form 
                 newLocation = {getLocation}
-                // me quede en el min 43:16
+            />
+
+            <Card
+                showData = {show}
+                loadingData = {loading}
+                weather = {weather}
+                forecast = {forecast}
             />
         </React.Fragment>
     );
