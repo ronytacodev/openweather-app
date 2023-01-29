@@ -36,14 +36,29 @@ const Card = ({loadingData, showData, weather, forecast}) => {
                                     {weather.weather[0].description}
                                 </p>
                                 <img 
-                                    src="https://images.pexels.com/photos/2097616/pexels-photo-2097616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    src="https://images.pexels.com/photos/3849167/pexels-photo-3849167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     className="img-fluid rounded-start"
                                     alt="city"
                                 />
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body text-start mt-2">
-
+                                    <h5 className="card-text">
+                                        Temperatura máxima: {(weather.main.temp_max - 273.15).toFixed(1)} °C
+                                    </h5>
+                                    <h5 className="card-text">
+                                        Temperatura mínima: {(weather.main.temp_min - 273.15).toFixed(1)} °C
+                                    </h5>
+                                    <h5 className="card-text">
+                                        Sensación Térmica: {(weather.main.feels_like - 273.15).toFixed(1)} °C
+                                    </h5>
+                                    <h5 className="card-text">
+                                        Humedad: {weather.main.humidity} %
+                                    </h5>
+                                    <h5 className="card-text">
+                                        Velocidad del viento: {weather.wind.speed} m/s
+                                        {/* me quede en el min 1:21:20 */}
+                                    </h5>
                                 </div>
                             </div>
                         </div>
