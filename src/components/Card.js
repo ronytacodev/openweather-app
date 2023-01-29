@@ -9,8 +9,16 @@ const Card = ({loadingData, showData, weather, forecast}) => {
     var year = today.getFullYear();
     var date = day + "/" + month + "/" + year;
 
+    var url = "";
+    var iconUrl = "";
+
     if(loadingData) {
         return <Spinner/>;
+    }
+
+    if(showData) {
+        url = "http://openweathermap.org/img/w/";
+        iconUrl = url + weather.weather[0].icon + ".png";
     }
 
     return (
@@ -24,6 +32,9 @@ const Card = ({loadingData, showData, weather, forecast}) => {
                                 <h3 className="card-title">{weather.name}</h3>
                                 <p className="card-date">{date}</p>
                                 <h1 className="card-temp">{(weather.main.temp - 273.15).toFixed(1)}°C</h1>
+                                <p className="card-desc"><img src={iconUrl} alt="icon"/>
+                                    {weather.weather[0].description}
+                                </p>
                                 <img 
                                     src="https://images.pexels.com/photos/2097616/pexels-photo-2097616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                     className="img-fluid rounded-start"
