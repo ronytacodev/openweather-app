@@ -65,16 +65,80 @@ body {
 }
 
 /* For mobile phones-landscape: */
-@media only screen and (min-width:320px) and (max-width:479px) {}
+@media only screen and (min-width:320px) and (max-width:479px) {
+  .container {
+    width: 100%;
+  }
 
-/* For tablet-portrait: */
-@media only screen and (min-width:480px) and (max-width:767px) {}
+  .input-group {
+    width: 95%;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .forecast-date {
+    font-size: 20px;
+  }
+}
+
+/* For tablet-portrait: f.example: surface duo*/
+@media only screen and (min-width:480px) and (max-width:767px) {
+  .container {
+    width: 100%;
+  }
+
+  .input-group {
+    width: 95%;
+  }
+
+  .card {
+    width: 95%;
+  }
+}
 
 /* For tablet-landscape: */
-@media only screen and (min-width:768px) and (max-width:1023px) {}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  .container {
+    width: 100%;
+  }
+
+  .input-group {
+    width: 95%;
+  }
+
+  .card {
+    width: 95%;
+  }
+}
 
 /* For laptops: */
-@media only screen and (min-width:1024px) and (max-width:1119px) {}
+@media only screen and (min-width:1024px) and (max-width:1119px) {
+  .container {
+    width: 100%;
+  }
+
+  .input-group {
+    width: 95%;
+  }
+
+  .card {
+    width: 95%;
+  }
+}
 
 /* For desktop: */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  .input-group {
+    width: 95%;
+  }
+
+  .card {
+    width: 95%;
+  }
+}
