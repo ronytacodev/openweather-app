@@ -88,7 +88,7 @@ const Card = ({loadingData, showData, weather, forecast}) => {
                                 </div>
                                 <hr/>
 
-                                <div className="row mt-4">
+                                <div className="card-forecast row mt-4">
                                     <div className="col">
                                         <p>{forecastDate3} hrs</p>
                                         <p className="description"><img src={iconUrl3} alt="icon"/>
@@ -101,7 +101,7 @@ const Card = ({loadingData, showData, weather, forecast}) => {
 
                                     <div className="col">
                                         <p>{forecastDate6} hrs</p>
-                                        <p className="description"><img src={iconUrl3} alt="icon"/>
+                                        <p className="description"><img src={iconUrl6} alt="icon"/>
                                             {forecast.list[2].weather[0].description}
                                         </p>
                                         <p className="temp">
@@ -111,7 +111,7 @@ const Card = ({loadingData, showData, weather, forecast}) => {
 
                                     <div className="col">
                                         <p>{forecastDate9} hrs</p>
-                                        <p className="description"><img src={iconUrl3} alt="icon"/>
+                                        <p className="description"><img src={iconUrl9} alt="icon"/>
                                             {forecast.list[3].weather[0].description}
                                         </p>
                                         <p className="temp">

@@ -11,7 +11,7 @@ body {
 }
 
 .card {
-  max-width: 60%;
+  width: 60%;
 }
 
 .card-title {
@@ -37,3 +37,44 @@ body {
   padding-left: 20px;
   margin-top: 340px;
 }
+
+/* MEDIA QUERIES */
+
+/* For mobile phones-portrait: */
+@media only screen and (max-width: 319px) {
+  .container {
+    width: 100%;
+  }
+
+  .input-group {
+    width: 95%;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .card-text {
+    font-size: 17px;
+  }
+
+  .card-forecast {
+    font-size: 12px;
+  }
+
+}
+
+/* For mobile phones-landscape: */
+@media only screen and (min-width:320px) and (max-width:479px) {}
+
+/* For tablet-portrait: */
+@media only screen and (min-width:480px) and (max-width:767px) {}
+
+/* For tablet-landscape: */
+@media only screen and (min-width:768px) and (max-width:1023px) {}
+
+/* For laptops: */
+@media only screen and (min-width:1024px) and (max-width:1119px) {}
+
+/* For desktop: */
+@media only screen and (min-width: 1200px) {}
