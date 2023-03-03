@@ -20,7 +20,7 @@ const Form = ({newLocation}) => {
                     <input 
                         type="text" 
                         className="form-control" 
-                        placeholder="¿de que ciudad desea saber su clima?" 
+                        placeholder="¿de que ciudad desea saber su clima? Pruebe ingresando Lima" 
                         onChange={(e) => setCity(e.target.value)}
                     />
                     <button className="btn btn-primary input-group-text" type="submit" >
